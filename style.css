@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blue;
+}
+.moving-ball {
+    border: 2px solid yellow;
+    padding: 5rem;
+    background: radial-gradient(circle, red, yellow, black, white);
+    border-radius: 30vw;
+    position: absolute;
+    top: 30%;
+    animation: moving-ball 3s linear 0s infinite normal;
+}
+@keyframes moving-ball {
+    0% {
+        left: -10%;
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 100%;
+        transform: rotate(940deg);
+    }
+
+}
